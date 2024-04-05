@@ -8,11 +8,6 @@ listener "tcp" {
   tls_disable = "true"
 }
 
-seal "gcpckms" {
-  crypto_key = "auto_unseal"
-  region     = "global"
-}
-
 storage "gcs" {
   ha_enabled = "false"
 }
